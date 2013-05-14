@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TeamSlipNSlide</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Title Page -->
+    <string name="title">Bunker Hill</string>
+    <string name="play">Play</string>
+    <string name="credits">Credits</string>
+    <string name="options">Options</string>
+
+    <!-- Options Page -->
+ 	<string name="sound">Sound</string> 
+ 	<string name="returnLbl">Return</string> 
+ 	<string name="on">On</string> 
+	<string name="off">Off</string>
+    
+    <!-- Credits Page -->
+    <string name="alexName">Alex Mitchell</string>
+    <string name="patrickName">Patrick Ritchie</string>
+    <string name="dylanName">Dylan Clayton</string>
+    <string name="title_activity_game">GameActivity</string>
+
+    <!-- Pregame Menu -->
+ 	<string name="newGame">New Game</string> 
+ 	<string name="continueGame">Continue</string>
+
+    <!-- Upgrades Page -->
+    <string name="fireSpeed">Fire Speed</string> 
+    <string name="fireSize">Shot Size</string> 
+    <string name="quit">Quit</string> 
+    <string name="ready">Ready?</string> 
+    <string name="total">Total:</string>
+    <string name="buyHealth">Health</string>
+    
+    <!-- Game Page -->
+    <string name="testDesc">Desc</string> <!-- This will be replaced later -->
+
+    <!-- Other - Do we need these? -->
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pats_test">PatsTest</string>
+    <string name="Load">loadGame</string>
+    <string name="New">newGame</string>
+    <string name="Continue">continueGame</string>
+
+</resources>

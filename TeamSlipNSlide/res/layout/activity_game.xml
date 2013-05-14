@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background2"
+    tools:context=".GameActivity" >
+
+    <!--  Note : Must be first, so it's behind the cannon base image -->
+	<!--  contentDescription - Replace with something useful later, just here to avoid warning -->
+
+    <ImageView
+        android:id="@+id/barrel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cannonBase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/testDesc"
+        android:src="@drawable/cannonbarrel" />
+    
+    <ImageView
+        android:id="@+id/cannonBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/testDesc"
+        android:src="@drawable/cannon" />
+
+    <Button
+        android:id="@+id/ArrowLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cannonBase"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/cannonBase"
+        android:layout_toLeftOf="@+id/barrel"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/ArrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cannonBase"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cannonBase"
+        android:layout_toRightOf="@+id/barrel"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/arrowRightImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ArrowRight"
+        android:layout_alignRight="@+id/ArrowRight"
+        android:contentDescription="@string/testDesc"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <ImageView
+        android:id="@+id/arrowLeftImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ArrowLeft"
+        android:layout_alignLeft="@+id/ArrowLeft"
+        android:contentDescription="@string/testDesc"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/testDesc"
+        android:onClick="onClickPause"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <ImageView
+        android:id="@+id/enemySpawn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/testDesc" />
+
+
+    <ImageView
+        android:id="@+id/enemySpawn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/testDesc"
+        android:layout_below="@+id/enemySpawn2" />
+
+</RelativeLayout>

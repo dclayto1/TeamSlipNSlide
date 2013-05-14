@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="landscape" >
+
+    <RatingBar
+        android:id="@+id/fireSizeStars1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="27dp"
+        android:isIndicator="true"
+        android:numStars="3"
+        android:rating="0" />
+
+    <RatingBar
+        android:id="@+id/fireSpeedStars1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fireSizeStars1"
+        android:layout_below="@+id/fireSizeStars1"
+        android:isIndicator="true"
+        android:numStars="3"
+        android:rating="0" />
+
+    <TextView
+        android:id="@+id/totalString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fireSizeBtn"
+        android:layout_alignParentTop="true"
+        android:text="@string/total"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lifePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lifeBtn"
+        android:layout_alignBottom="@+id/lifeBtn"
+        android:layout_alignRight="@+id/fireSpeedPrice"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/lifeBtn"
+        style="@style/custombutton1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fireSpeedBtn"
+        android:layout_below="@+id/fireSpeedBtn"
+        android:layout_marginTop="21dp"
+        android:onClick="onClickBuyHealth"
+        android:text="@string/buyHealth" />
+
+    <Button
+        android:id="@+id/fireSizeBtn"
+        style="@style/custombutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fireSizeStars1"
+        android:onClick="onClickFireSize"
+        android:text="@string/fireSize" />
+
+    <Button
+        android:id="@+id/fireSpeedBtn"
+        style="@style/custombutton1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fireSpeedStars1"
+        android:layout_alignLeft="@+id/fireSizeBtn"
+        android:onClick="onClickFireSpeed"
+        android:text="@string/fireSpeed" />
+
+    <TextView
+        android:id="@+id/totalInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalString"
+        android:layout_alignBottom="@+id/totalString"
+        android:layout_alignLeft="@+id/fireSizePrice"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fireSizePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fireSpeedStars1"
+        android:layout_marginLeft="56dp"
+        android:layout_toRightOf="@+id/fireSpeedBtn"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fireSpeedPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lifeBtn"
+        android:layout_alignLeft="@+id/fireSizePrice"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/quitBtn"
+        style="@style/custombutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lifePrice"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickQuit"
+        android:text="@string/quit" />
+
+    <Button
+        android:id="@+id/readyBtn"
+        style="@style/custombutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickReady"
+        android:text="@string/ready" />
+
+</RelativeLayout>
